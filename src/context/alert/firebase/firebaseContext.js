@@ -1,10 +1,5 @@
 
-const handlers={
-    DEFAULT: state=> state   
-}
+import { createContext } from "react";
 
-export const firebaseReducer=(state, action)=>{
-    const handle=handlers[action.type] || handlers.DEFAULT;
-    return handle(state, action);
-}
+export const FirebaseContext=createContext()
 
